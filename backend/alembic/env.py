@@ -5,6 +5,7 @@ from sqlalchemy import engine_from_config, pool
 from alembic import context
 from safetysignal.config import settings
 from safetysignal.db import Base
+from safetysignal import models  # noqa: F401 -- imported so Alembic detects model classes
 
 config = context.config
 config.set_main_option("sqlalchemy.url", settings.database_url)
