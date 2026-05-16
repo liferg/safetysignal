@@ -19,6 +19,7 @@ services:
     build: ./backend
     environment:
       DATABASE_URL: postgresql+psycopg://safetysignal:safetysignal@postgres:5432/safetysignal
+      OPENFDA_API_KEY: ${OPENFDA_API_KEY:-}
     ports:
       - "8000:8000"
     depends_on:

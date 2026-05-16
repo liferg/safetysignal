@@ -10,6 +10,7 @@ RUN pip install --no-cache-dir \
     "psycopg[binary]>=3.2" \
     "alembic>=1.13" \
     "pydantic>=2.9" \
-    "pydantic-settings>=2.6"
+    "pydantic-settings>=2.6" \
+    "httpx>=0.27"
 
 EXPOSE 8000
