@@ -33,3 +33,10 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "W", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    # SQLAlchemy 2.0 deprecation chatter from third-party libs — not actionable.
+    "ignore::DeprecationWarning:sqlalchemy.*",
+]

@@ -13,4 +13,10 @@ RUN pip install --no-cache-dir \
     "pydantic-settings>=2.6" \
     "httpx>=0.27"
 
+# Dev-time tooling (pytest for the test suite, ruff for linting).
+# Mirrors pyproject.toml's [project.optional-dependencies] dev.
+RUN pip install --no-cache-dir \
+    "pytest>=8.0" \
+    "ruff>=0.7"
+
 EXPOSE 8000
