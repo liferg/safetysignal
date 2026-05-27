@@ -14,7 +14,6 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from safetysignal import stats
 
-
 # ---------- Error response ----------
 
 class ErrorOut(BaseModel):

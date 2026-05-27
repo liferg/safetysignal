@@ -1,7 +1,7 @@
 """Tests for the PRR computation.
 
-The critical test of the project.
-If this passes, every signal the API serves is mathematicallysound. If it ever fails, every signal is suspect.
+The critical test of the project. If this passes, every signal the API
+serves is mathematically sound. If it ever fails, every signal is suspect.
 """
 import pytest
 from sqlalchemy.orm import Session
